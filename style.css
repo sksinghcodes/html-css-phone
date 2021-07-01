@@ -1,0 +1,69 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+}
+
+#phone {
+    background-color: #f2f2f2;
+    height: 550px;
+    width: 270px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: inset -2px -2px 9px 0px #0006,
+    			inset 7px 7px 7px 5px white,
+    			5px 5px 10px -9px;
+}
+
+#display {
+    height: 455px;
+    width: 253px;
+    background: linear-gradient(40deg, #000c 0%, #0006 77%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.speaker {
+    background-color: #00000054;
+    width: 38px;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 34px;
+    border-radius: 3px;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background: linear-gradient(127deg, #aaaaaa, #fff );
+    top: 507px;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%);
+}
+
+.button::after {
+    background: #f2f2f2;
+    left: 3px;
+    top: 3px;
+    width: 24px;
+    position: absolute;
+    height: 24px;
+    z-index: 2;
+    content: "";
+    border-radius: 11px;
+}
